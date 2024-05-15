@@ -60,21 +60,3 @@ class CircularLinkedList:
             if current == self.head:
                 break
         print("]")
-
-
-circular_list = CircularLinkedList()
-circular_list.insert_first(5, 15)
-circular_list.insert_first(8, 47)
-circular_list.insert_first(4, 98)
-circular_list.insert_first(6, 1)
-
-print("Original List:")
-circular_list.print_list()
-
-while not circular_list.is_empty():
-    temp = circular_list.delete_first()
-    if temp:
-        print(f"\nDeleted value: ({temp.key},{temp.data})")
-
-print("List after deleting all items:")
-circular_list.print_list()
